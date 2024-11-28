@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Gastos</title>
+  <link rel="stylesheet" href="tarjetas.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulario -->
+    <div class="form-container">
+      <h2>Registra tu gasto</h2>
+      <form id="expense-form">
+        <div class="form-group">
+          <label for="descripcion" class="input-icon">
+            <span class="icon">📝</span>
+            <input type="text" id="descripcion" placeholder="Descripción" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="monto" class="input-icon">
+            <span class="icon">💰</span>
+            <input type="number" id="monto" placeholder="Monto $" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="fecha" class="input-icon">
+            <span class="icon">📅</span>
+            <input type="date" id="fecha" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="categoria" class="input-icon">
+            <span class="icon">📂</span>
+            <select id="categoria" required>
+              <option value="" disabled selected>Selecciona una categoría</option>
+              <option value="transporte">Transporte</option>
+              <option value="comida">Comida</option>
+              <option value="otros">Otros</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="metodo-pago" class="input-icon">
+            <span class="icon">💳</span>
+            <select id="metodo-pago" required>
+              <option value="" disabled selected>Selecciona un método de pago</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta-debito">Tarjeta de Débito</option>
+              <option value="tarjeta-credito">Tarjeta de Crédito</option>
+            </select>
+          </label>
+        </div>
+        <button type="submit">Registrar</button>
+      </form>
+    </div>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="cards-container" id="cards-container"></div>
+  </div>
+
+  <script src="tarjetas.js"></script>
+  <script src="/controllers/login.js"></script>
+</body>
+</html>
