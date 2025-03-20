@@ -6,20 +6,7 @@ Este proyecto es un componente de formulario de inicio de sesión creado con **R
 - Diseño moderno y responsivo
 - Efectos visuales atractivos con CSS
 - Botón con animaciones al pasar el cursor
-
-## 📂 Estructura del Proyecto
-```
-/react-proyecto
-│-- src
-│   ├── components
-│   │   ├── Login.jsx  # Componente de Login
-│   ├── App.jsx        # Archivo principal
-│   ├── main.jsx       # Punto de entrada de React
-│   ├── Login.css      # Estilos del login
-│-- public
-│-- package.json
-```
-
+- 
 ## 🛠 Instalación y Uso
 1. Clona el repositorio:
    ```sh
